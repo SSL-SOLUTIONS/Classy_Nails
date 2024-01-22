@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,19 +27,20 @@
         </form>
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <form method="POST" action="">
+        <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+    <form id="logoutForm" method="POST" action="{{ route('logout') }}">
     @csrf
     <li>
-        <a class="dropdown-item" href="" >
+        <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logoutForm').submit();">
             Logout
         </a>
     </li>
 </form>
-                </ul>
-            </li>
+
+    </ul>
+</li>
         </ul>
     </nav>
     <div id="layoutSidenav">
@@ -53,7 +55,7 @@
                         </a>
                         <a class="nav-link" href="/blog">
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                        Blogs
+                            Blogs
                         </a>
                     </div>
                 </div>
@@ -64,7 +66,7 @@
                 <div class="container-fluid px-4">
                     <h1 class="mt-4 text-center">ClassyNails</h1>
                     <div class="row">
-                    <div class="col-xl-3 col-md-6">
+                        <div class="col-xl-3 col-md-6">
                             <div class="card bg-primary text-white mb-4">
                                 <div class="card-body"></div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
@@ -106,7 +108,7 @@
 
         </div>
     </div>
-  
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="{{asset('admin/js/scripts.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
@@ -114,7 +116,9 @@
     <script src="{{asset('admin/assets/demo/chart-bar-demo.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
     <script src="{{asset('admin/js/datatables-simple-demo.js')}}"></script>
- 
+  
+</script>
+
 </body>
 
 </html>
