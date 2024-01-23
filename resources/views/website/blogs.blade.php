@@ -132,484 +132,55 @@
             <li class="breadcrumb-item">
                 <a href="{{url('/')}}">Home</a>
             </li>
-            <li class="breadcrumb-item">variant 1</li>
-            <li class="breadcrumb-item active" aria-current="page">
-                <a href="blog_col_style2.html">style 2</a>
-            </li>
+           
         </ol>
     </nav>
     <!-- //breadcrumbs -->
     <!-- single -->
     <div class="single-w3l py-5">
-        <div class="container py-xl-5 py-lg-3">
-            <div class="row inner_sec_info pt-md-4">
-                <!-- right side -->
-                <div class="col-lg-4 event-right">
-                    <div class="event-right1">
-                        <div class="search1">
-                            <form class="form-inline" action="#" method="post">
-                                <input class="form-control rounded-0 mr-sm-2" type="search" placeholder="Search Here" aria-label="Search" required>
-                                <input class="btn bg-dark text-white rounded-0 mt-3 w-100" type="submit" value="Search">
-                            </form>
-                        </div>
-                        <div class="categories my-4 p-4 border">
-                            <h3 class="blog-title">Categories</h3>
-                            <ul>
-                                <li class="mt-3">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <a href="single.html">At vero eos et accusamus iusto</a>
-                                </li>
-                                <li class="mt-3">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <a href="single.html">Sed ut perspiciatis unde omnis</a>
-                                </li>
-                                <li class="mt-3">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <a href="single.html">Accusantium doloremque lauda</a>
-                                </li>
-                                <li class="mt-3">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <a href="single.html">Vel illum qui dolorem fugiat quo</a>
-                                </li>
-                                <li class="mt-3">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <a href="single.html">Quis autem vel eum repreh</a>
-                                </li>
-                                <li class="mt-3">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <a href="single.html">Neque porro quisquam est qui</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="posts p-4 border">
-                            <h3 class="blog-title ">Our Events</h3>
-                            <div class="posts-grids">
-                                <div class="row posts-grid mt-4">
-                                    <div class="col-lg-4 col-md-3 col-4 posts-grid-left pr-0">
-                                        <a href="single.html">
-                                            <img src="{{asset('website/images/c1.jpg')}}" alt=" " class="img-fluid" />
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7 col-8 posts-grid-right mt-lg-0 mt-md-5 mt-sm-4">
-                                        <h4>
-                                            <a href="" class="text-dark">Sed ut perspiciatis unde omni</a>
-                                        </h4>
-                                        <ul class="wthree_blog_events_list mt-2">
-                                            <li class="mr-2 text-dark">
-                                                <i class="fa fa-calendar mr-2" aria-hidden="true"></i>15/05/18
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <a href="" class="text-dark ml-2">Admin</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="row posts-grid mt-4">
-                                    <div class="col-lg-4 col-md-3 col-4 posts-grid-left pr-0">
-                                        <a href="single.html">
-                                            <img src="{{asset('website/images/c2.jpg')}}" alt=" " class="img-fluid" />
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7 col-8 posts-grid-right mt-lg-0 mt-md-5 mt-sm-4">
-                                        <h4>
-                                            <a href="single.html" class="text-dark">Sed ut perspiciatis unde omni</a>
-                                        </h4>
-                                        <ul class="wthree_blog_events_list mt-2">
-                                            <li class="mr-2 text-dark">
-                                                <i class="fa fa-calendar mr-2" aria-hidden="true"></i>23/05/18
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <a href="" class="text-dark ml-2">Admin</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="row posts-grid mt-4">
-                                    <div class="col-lg-4 col-md-3 col-4 posts-grid-left pr-0">
-                                        <a href="">
-                                            <img src="{{asset('website/images/c3.jpg')}}" alt=" " class="img-fluid" />
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-8 col-md-7 col-8 posts-grid-right mt-lg-0 mt-md-5 mt-sm-4">
-                                        <h4>
-                                            <a href="" class="text-dark">Sed ut perspiciatis unde omni</a>
-                                        </h4>
-                                        <ul class="wthree_blog_events_list mt-2">
-                                            <li class="mr-2 text-dark">
-                                                <i class="fa fa-calendar mr-2" aria-hidden="true"></i>13/06/18
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-user" aria-hidden="true"></i>
-                                                <a href="" class="text-dark ml-2">Admin</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tags mt-4 p-4 border">
-                            <h3 class="blog-title text-dark">Recent Tags</h3>
-                            <ul class="mt-4">
-                                <li>
-                                    <a href="about.html" class="text-dark border">dfre</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">Gahydwq</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">qeers</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">hysert</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">hjwsa</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">sumgr</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">nhyewq</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">njyra</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">laiuwa</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">loghw</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">mhyu</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">mojjs</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">suisq</a>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="text-dark border">bhyfgh</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <aside class="side-bar my-4">
-                        <ul class="nav nav-tabs" role="tablist" id="myTab">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Latest</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Top</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Featured</a>
-                            </li>
-                        </ul>
+    <div class="container py-xl-5 py-lg-3">
+        <div class="row inner_sec_info pt-md-4">
 
-                        <!-- Tab panes -->
-                        <div class="tab-content sidebar-tabing mt-3" id="nav-tabContent">
-                            <div class="tab-pane active" id="home" role="tabpanel">
-                                <div class="media">
-                                    <a href="">
-                                        <img class="d-flex mr-3 img-fluid" src="{{asset('website/images/g5.jpg')}}" alt="Generic placeholder image" />
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="news-title">
-                                            <h2 class="title-small">
-                                                <a href="" class="text-black">Praesent sapien massa, convallis a pellentesque nec.</a>
-                                            </h2>
-                                        </div>
-                                        <div class="news-auther">
-                                            <small class="text-time">
-                                                <em>10 mins ago</em>
-                                            </small>
-                                        </div>
+            @foreach($blogs->chunk(2) as $blogRow)
+                <div class="row mb-4">
+                    @foreach($blogRow as $blog)
+                        <div class="col-lg-6">
+                            <!-- blog grid -->
+                            <div class="full_width_blog_grid">
+                                <div class="card">
+                                    <div class="card-header p-0">
+                                        <a href="">
+                                            <img class="card-img-bottom" src="{{ asset('admin/images/blogs/' . $blog->image) }}" alt="Card image cap">
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="media">
-                                    <a href="">
-                                        <img class="d-flex mr-3 img-fluid" src="{{asset('website/images/g7.jpg')}}" alt="Generic placeholder image" />
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="news-title">
-                                            <h2 class="title-small">
-                                                <a href="" class="text-black">Praesent sapien massa, convallis a pellentesque nec.</a>
-                                            </h2>
+                                    <div class="card-body">
+                                        <div class="d-sm-flex justify-content-between border-bottom py-2">
+                                            <h5 class="blog-title card-title font-weight-bold">
+                                                <a href="{{ route('blogs.show', ['id' => $blog->id]) }}">{{ $blog->title }}</a>
+                                            </h5>
+                                            <div class="blog_w3icon">
+                                                <!-- Additional metadata if needed -->
+                                            </div>
                                         </div>
-                                        <div class="news-auther">
-                                            <small class="text-time">
-                                                <em>20 mins ago</em>
-                                            </small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <a href="single.html">
-                                        <img class="d-flex mr-3 img-fluid" src="{{asset('website/images/g2.jpg')}}" alt="Generic placeholder image" />
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="news-title">
-                                            <h2 class="title-small">
-                                                <a href="" class="text-black">Praesent sapien massa, convallis a pellentesque nec.</a>
-                                            </h2>
-                                        </div>
-                                        <div class="news-auther">
-                                            <small class="text-time">
-                                                <em>30 mins ago</em>
-                                            </small>
-                                        </div>
+                                        <p class="card-text mt-3">{{ Str::limit(strip_tags(Purifier::clean($blog->description)), 400) }}
+</p>
+                                        <a href="{{ route('blogs.show', ['id' => $blog->id]) }}" class="blog-btn text-dark" target="_blank">Read more</a>
+                                        <p class="card-text text-right">
+                                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                                </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="profile" role="tabpanel">
-                                <div class="media">
-                                    <a href="">
-                                        <img class="d-flex mr-3 img-fluid" src="{{asset('website/images/g2.jpg')}}" alt="Generic placeholder image" />
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="news-title">
-                                            <h2 class="title-small">
-                                                <a href="" class="text-black">Praesent sapien massa, convallis a pellentesque nec.</a>
-                                            </h2>
-                                        </div>
-                                        <div class="news-auther">
-                                            <small class="text-time">
-                                                <em>10 mins ago</em>
-                                            </small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <a href="">
-                                        <img class="d-flex mr-3 img-fluid" src="{{asset('website/images/g5.jpg')}}" alt="Generic placeholder image" />
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="news-title">
-                                            <h2 class="title-small">
-                                                <a href="single.html" class="text-black">Praesent sapien massa, convallis a pellentesque nec.</a>
-                                            </h2>
-                                        </div>
-                                        <div class="news-auther">
-                                            <small class="text-time">
-                                                <em>13 mins ago</em>
-                                            </small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <a href="">
-                                        <img class="d-flex mr-3 img-fluid" src="{{asset('website/images/g4.jpg')}}" alt="Generic placeholder image" />
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="news-title">
-                                            <h2 class="title-small">
-                                                <a href="single.html" class="text-black">Praesent sapien massa, convallis a pellentesque nec.</a>
-                                            </h2>
-                                        </div>
-                                        <div class="news-auther">
-                                            <small class="text-time">
-                                                <em>30 mins ago</em>
-                                            </small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="messages" role="tabpanel">
-                                <div class="media">
-                                    <a href="">
-                                        <img class="d-flex mr-3 img-fluid" src="{{asset('website/images/g5.jpg')}}" alt="Generic placeholder image">
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="news-title">
-                                            <h2 class="title-small">
-                                                <a href="single.html" class="text-black">Praesent sapien massa, convallis a pellentesque nec.</a>
-                                            </h2>
-                                        </div>
-                                        <div class="news-auther">
-                                            <small class="text-time">
-                                                <em>40 mins ago</em>
-                                            </small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <a href="">
-                                        <img class="d-flex mr-3 img-fluid" src="{{asset('website/images/g1.jpg')}}" alt="Generic placeholder image">
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="news-title">
-                                            <h2 class="title-small">
-                                                <a href="single.html" class="text-black">Praesent sapien massa, convallis a pellentesque nec.</a>
-                                            </h2>
-                                        </div>
-                                        <div class="news-auther">
-                                            <small class="text-time">
-                                                <em>1hr ago</em>
-                                            </small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <a href="">
-                                        <img class="d-flex mr-3 img-fluid" src="{{asset('website/images/g2.jpg')}}" alt="Generic placeholder image">
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="news-title">
-                                            <h2 class="title-small">
-                                                <a href="single.html" class="text-black">Praesent sapien massa, convallis a pellentesque nec.</a>
-                                            </h2>
-                                        </div>
-                                        <div class="news-auther">
-                                            <small class="text-time">
-                                                <em>2 hrs ago</em>
-                                            </small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- //blog grid -->
                         </div>
-                        <div class="bc_sub mt-3 my-4">
-                            <h4>Sign up to our newsletter</h4>
-                            <p>Praesent sapien masspien aco nvallis</p>
-                            <form action="#" method="post">
-                                <input type="email" placeholder="Email" required="">
-                                <input type="submit" value="Subscribe">
-                            </form>
-                        </div>
-                        <div class="video-sec bc_sub">
-                            <h4>Featured Video</h4>
-                            <div class="video-block">
-                                <div class="embed-responsive embed-responsive-4by3">
-                                    <iframe width="460" height="250" src="https://www.youtube.com/embed/aI-QmC5asnA" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
-                    <div class="tags mt-4 p-4 border">
-                        <div class="footerv2-w3ls">
-                            <h3 class="blog-title">Over 500k + Readers</h3>
-                            <ul class="social-iconsv2 agileinfo pt-3">
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/SSL-SOLUTIONS" target="_blank" class="me-4 text-reset">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
-                <!-- //right side -->
-                <!-- left grid -->
-                <div class="col-lg-8">
-                    <!-- blog grid -->
-                    <div class="full_width_blog_grid">
-                        <div class="card">
-                            <div class="card-header p-0">
-                                <a href="">
-                                    <img class="card-img-bottom" src="{{asset('website/images/g4.jpg')}}" alt="Card image cap">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="d-sm-flex justify-content-between  border-bottom py-2">
-                                    <h5 class="blog-title card-title font-weight-bold">
-                                        <a href="">Blog Title</a>
-                                    </h5>
-                                    <div class="blog_w3icon">
-                                        <span>
-                                            <i class="fas fa-user mr-2"></i>Stella</span>
-                                        <span class="ml-3">
-                                            <i class="fab fa-servicestack mr-2"></i>Funding Trends</span>
-                                    </div>
-                                </div>
-                                <p class="card-text mt-3">Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt
-                                    nibh pulvinar a. Pellentesque in ipsum id orci porta sed magna dictum dapibus.</p>
-                                <a href="" class="blog-btn text-dark">Read more</a>
-                                <p class="card-text text-right">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //blog grid -->
-                    <!-- blog grid -->
-                    <div class="full_width_blog_grid my-5">
-                        <div class="card">
-                            <div class="card-header p-0">
-                                <a href="">
-                                    <img class="card-img-bottom" src="{{asset('website/images/g2.jpg')}}" alt="Card image cap">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="d-sm-flex justify-content-between  border-bottom py-2">
-                                    <h5 class="blog-title card-title font-weight-bold">
-                                        <a href="">Blog Title</a>
-                                    </h5>
-                                    <div class="blog_w3icon">
-                                        <span>
-                                            <i class="fas fa-user mr-2"></i>Stella</span>
-                                        <span class="ml-3">
-                                            <i class="fab fa-servicestack mr-2"></i>Funding Trends</span>
-                                    </div>
-                                </div>
-                                <p class="card-text mt-3">Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt
-                                    nibh pulvinar a. Pellentesque in ipsum id orci porta sed magna dictum dapibus.</p>
-                                <a href="" class="blog-btn text-dark">Read more</a>
-                                <p class="card-text text-right">
-                                    <small class="text-muted">Last updated 15 mins ago</small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //blog grid -->
-                    <!-- blog grid -->
-                    <div class="full_width_blog_grid">
-                        <div class="card">
-                            <div class="card-header p-0">
-                                <a href="">
-                                    <img class="card-img-bottom" src="{{asset('website/images/g3.webp')}}" alt="Card image cap">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="d-sm-flex justify-content-between  border-bottom py-2">
-                                    <h5 class="blog-title card-title font-weight-bold">
-                                        <a href="single.html">Blog Title</a>
-                                    </h5>
-                                    <div class="blog_w3icon">
-                                        <span>
-                                            <i class="fas fa-user mr-2"></i>Stella</span>
-                                        <span class="ml-3">
-                                            <i class="fab fa-servicestack mr-2"></i>Funding Trends</span>
-                                    </div>
-                                </div>
-                                <p class="card-text mt-3">Cras ultricies ligula sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt
-                                    nibh pulvinar a. Pellentesque in ipsum id orci porta sed magna dictum dapibus.</p>
-                                <a href="single.html" class="blog-btn text-dark">Read more</a>
-                                <p class="card-text text-right">
-                                    <small class="text-muted">Last updated 15 mins ago</small>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //blog grid -->
-                </div>
-                <!-- //left grid -->
-            </div>
+            @endforeach
+
         </div>
     </div>
+</div>
+
     <!-- //single -->
     <!-- footer -->
     <div class="footer pt-lg-5 text-center">
@@ -617,7 +188,7 @@
             <!-- logo -->
             <div class="logo">
                 <h2>
-                    <a href="index.html" class="text-center">
+                    <a href="" class="text-center">
                         beauty
                         <span class="d-block">Blog</span>
                     </a>
@@ -666,7 +237,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>

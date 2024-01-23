@@ -36,10 +36,11 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
+   
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            'image' => 'required',
+            'image' => 'required|image',
         ]);
 
         $imageName = time() . '.' . $request->image->extension();
@@ -50,9 +51,14 @@ class BlogController extends Controller
             'image' => $imageName,
             'description' => $request->description,
         ]);
+        
         return redirect()->route('blog.index')->with('success', 'Blog created successfully.');
     }
 
+    public function show(Blog $blog)
+    {
+        return view('blogs.show', compact('blog'));
+    }
 
     /**
      * Display the specified resource.

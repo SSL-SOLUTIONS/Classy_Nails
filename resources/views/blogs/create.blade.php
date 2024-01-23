@@ -15,7 +15,7 @@
 
         <div class="form-group col-6">
             <label for="description"><h5>Description</h5></label>
-            <textarea name="description" class="form-control" required>{{ old('description') }}</textarea>
+            <textarea name="description" id="description" class="form-control" required>{{ old('description') }}</textarea>
             @error('description')
                 <span class="text-danger">{{ $message }}</span>
             @enderror
@@ -32,4 +32,14 @@
         <button type="submit" class="btn btn-success">Save Blog</button><br>
     </form>
 </div>
+<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
+<!-- Initialize CKEditor on the 'description' textarea -->
+<script>
+    CKEDITOR.replace('description');
+</script>
 @endsection
+
+
+
+

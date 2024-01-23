@@ -23,6 +23,7 @@ Route::get('/', function () {
 Route::get('about' ,[WebsiteController::class, 'about'])->name('about');
 Route::get('contact',[WebsiteController::class, 'contact'])->name('contact');
 Route::get('blogs',[WebsiteController::class,'blogs'])->name('blogs');
+Route::get('/blogs/{id}', [WebsiteController::class, 'shows'])->name('blogs.show');
 Route::get('privacypolicies',[WebsiteController::class,'privacypolicies'])->name('privacypolicies');
 Route::get('termsconditions',[WebsiteController::class,'termsconditions'])->name('termsconditions');
 
@@ -34,7 +35,6 @@ Route::get('termsconditions',[WebsiteController::class,'termsconditions'])->name
 
     Route::get('dashboard', [AdminController::class, 'dashboard'])->name('dashboard')->middleware('auth');
     Route::resource('blog', BlogController::class);
-
 Route::get('/signup', [AuthController::class, 'showSignupForm']);
 Route::post('/signup', [AuthController::class, 'signup'])->name('signup');
 Route::get('/signin', [AuthController::class, 'showSignInForm']);

@@ -21,7 +21,10 @@
         </div>
         <div class="form-group">
             <label for="description"><h5>Description</h5></label>
-            <textarea name="description" class="form-control" required>{{ $blog->description }}</textarea>
+            <textarea name="description" id="description" class="form-control" required>{{ $blog->description }}</textarea>
+            @error('description')
+                <span class="text-danger">{{ $message }}</span>
+            @enderror
         </div>
         <div class="form-group">
             <label for="image"><h5>Image</h5></label>
@@ -30,4 +33,10 @@
         <button type="submit" class="btn btn-success">Update</button>
     </form>
 </div>
+<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
+<!-- Initialize CKEditor on the 'description' textarea -->
+<script>
+    CKEDITOR.replace('description');
+</script>
 @endsection

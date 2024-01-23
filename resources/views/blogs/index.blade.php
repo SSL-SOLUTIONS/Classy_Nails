@@ -14,7 +14,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Title</th>
-                    <th>Description</th>
+              
                     <th>Image</th>
                     <th>Actions</th>
                 </tr>
@@ -24,12 +24,12 @@
                     <tr>
                         <td>{{ $blog->id }}</td>
                         <td>{{ $blog->title }}</td>
-                        <td>{{ $blog->description }}</td>
                         <td>
                         <img src="{{ asset('admin/images/blogs/' . $blog->image) }}" alt="Blog Image" style="max-width: 100px; max-height: 100px;">
                     </td>
                     <td>
                         <td>
+                        <a href="{{ route('blog.show', $blog->id) }}" class="btn btn-info">View</a>
                             <a href="{{ route('blog.edit', $blog->id) }}" class="btn btn-primary">Edit</a>
                             <form action="{{ route('blog.destroy', $blog->id) }}" method="POST" style="display: inline-block;">
                             @csrf
