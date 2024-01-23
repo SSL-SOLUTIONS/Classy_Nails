@@ -41,10 +41,10 @@ class BlogController extends Controller
             'description' => 'required',
             'image' => 'required',
         ]);
-    
-        $imageName = time().'.'.$request->image->extension();  
+
+        $imageName = time() . '.' . $request->image->extension();
         $request->image->move(public_path('admin/images/blogs'), $imageName);
-    
+
         $blog = Blog::create([
             'title' => $request->title,
             'image' => $imageName,
@@ -52,7 +52,7 @@ class BlogController extends Controller
         ]);
         return redirect()->route('blog.index')->with('success', 'Blog created successfully.');
     }
-    
+
 
     /**
      * Display the specified resource.
@@ -60,7 +60,7 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
- 
+
 
     /**
      * Show the form for editing the specified resource.
@@ -80,29 +80,28 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $id)
+    public function update(Request $request, Blog $blog)
     {
         $request->validate([
             'title' => 'required',
             'description' => 'required',
             'image' => 'nullable|image',
         ]);
-    
-        $blog = $id;
-    
+
         if ($request->hasFile('image')) {
-            $imageName = time().'.'.$request->image->extension();  
+            $imageName = time() . '.' . $request->image->extension();
             $request->image->move(public_path('admin/images/blogs'), $imageName);
             $blog->image = $imageName;
         }
-    
+
         $blog->title = $request->title;
         $blog->description = $request->description;
         $blog->save();
-    
+
         return redirect()->route('blog.index')->with('success', 'Blog updated successfully.');
     }
-    
+
+
 
     /**
      * Remove the specified resource from storage.
