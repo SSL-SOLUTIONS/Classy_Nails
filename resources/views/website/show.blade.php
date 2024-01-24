@@ -92,8 +92,24 @@
                             </a>
                         </li>
                         <li class="treeview">
+                            <a href="{{route('blogs')}}">
+                                <span>Blogs</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
                             <a href="{{route('contact')}}">
-                                <span>Contact Us</span>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+
+                        <li class="treeview">
+                            <a href="{{route('privacypolicies')}}">
+                                <span>Privacy Policy</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="{{route('termsconditions')}}">
+                                <span>Terms & Conditions</span>
                             </a>
                         </li>
                       
