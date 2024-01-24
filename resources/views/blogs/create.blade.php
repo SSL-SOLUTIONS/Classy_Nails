@@ -5,7 +5,7 @@
     <form action="{{ route('blog.store') }}" method="post" enctype="multipart/form-data">
         @csrf
 
-        <div class="form-group col-6">
+        <div class="form-group">
             <label for="title"><h5>Title</h5></label>
             <input type="text" name="title" class="form-control" required value="{{ old('title') }}">
             @error('title')
@@ -13,7 +13,7 @@
             @enderror
         </div>
 
-        <div class="form-group col-6">
+        <div class="form-group">
             <label for="description"><h5>Description</h5></label>
             <textarea name="description" id="description" class="form-control" required>{{ old('description') }}</textarea>
             @error('description')
@@ -21,7 +21,7 @@
             @enderror
         </div>
 
-        <div class="form-group col-6">
+        <div class="form-group">
             <label for="image"><h5>Image</h5></label>
             <input type="file" name="image" class="form-control">
             @error('image')
